@@ -1,7 +1,7 @@
 import EmployeesListItem from "../employees-list-item/employees-list-item"
 import './employees-list.css'
 
-const EmployeesList = ({data, onDelete}) => {
+const EmployeesList = ({data, onDelete, onToggleIncrease, onToggleRise}) => {
     
     const elements = data.map( el => {
         const { id, ...itemProps} = el;
@@ -9,8 +9,10 @@ const EmployeesList = ({data, onDelete}) => {
             // или так : <EmployeesListItem name = {el.name} salary = {el.salary} increase = {el.increase}/>
              <EmployeesListItem 
              key = {id}
-              {...itemProps} 
-             onDelete = { () => onDelete(id) }/>
+             {...itemProps} 
+             onDelete = { () => onDelete(id) }
+             onToggleIncrease = { () => onToggleIncrease(id)} 
+             onToggleRise = { () => onToggleRise(id)}/>
         )
     });
     return (
