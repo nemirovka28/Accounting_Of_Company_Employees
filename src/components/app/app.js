@@ -45,6 +45,18 @@ import './app.css';
         });
     }
 
+    handleSalary = (e,id) => {
+        this.setState(({data}) => ({
+            data: data.map ( item => {
+                if (item.id === id) {
+                    return {...item, salary: e}
+                }
+                return item
+            })
+        }))
+
+    }
+
     onToggleIncrease = (id) => {
         this.setState(({data}) => ({
             data: data.map ( item => {
@@ -118,7 +130,8 @@ import './app.css';
                     <EmployeesList data = {visibleData} 
                      onDelete = {this.deleteItem}
                      onToggleIncrease = {this.onToggleIncrease}
-                     onToggleRise = {this.onToggleRise} />
+                     onToggleRise = {this.onToggleRise} 
+                     newHandleSalary = {this.handleSalary}/>
                     <EmployeesAddForm onAdd = {this.addItem}/>
             </div>
         );
