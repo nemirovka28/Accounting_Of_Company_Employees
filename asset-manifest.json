@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Accounting_Of_Company_Employees/static/css/main.b5eb0587.css",
+    "main.js": "/Accounting_Of_Company_Employees/static/js/main.9c2f58e9.js",
+    "static/js/787.6c9435c6.chunk.js": "/Accounting_Of_Company_Employees/static/js/787.6c9435c6.chunk.js",
+    "index.html": "/Accounting_Of_Company_Employees/index.html",
+    "main.b5eb0587.css.map": "/Accounting_Of_Company_Employees/static/css/main.b5eb0587.css.map",
+    "main.9c2f58e9.js.map": "/Accounting_Of_Company_Employees/static/js/main.9c2f58e9.js.map",
+    "787.6c9435c6.chunk.js.map": "/Accounting_Of_Company_Employees/static/js/787.6c9435c6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5eb0587.css",
+    "static/js/main.9c2f58e9.js"
+  ]
+}
