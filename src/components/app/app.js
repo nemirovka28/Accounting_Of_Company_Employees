@@ -45,11 +45,11 @@ import './app.css';
         });
     }
 
-    handleSalary = (e,id) => {
+    handleSalary = (value,id) => {
         this.setState(({data}) => ({
             data: data.map ( item => {
                 if (item.id === id) {
-                    return {...item, salary: e}
+                    return {...item, salary: value}
                 }
                 return item
             })
